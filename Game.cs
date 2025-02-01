@@ -1,7 +1,11 @@
-﻿using SpaceInvaders.Utils;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Raylib_cs;
 using SpaceInvaders.Managers;
+using SpaceInvaders.Utils;
 
 namespace SpaceInvaders
 {
@@ -9,11 +13,8 @@ namespace SpaceInvaders
     {
         public static void Main()
         {
-
             Raylib.InitWindow(Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT, "Space Invaders");
-            Raylib.SetTargetFPS(60);
-
-            GameManager.Initialize();
+            Raylib.SetTargetFPS(144);
 
             while (!Raylib.WindowShouldClose())
             {
