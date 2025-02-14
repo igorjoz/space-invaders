@@ -16,15 +16,20 @@ namespace SpaceInvaders.Managers
             {
                 player.MoveRight();
             }
-            else if (Raylib.IsKeyDown(KeyboardKey.Left))
+            if (Raylib.IsKeyDown(KeyboardKey.Left))
             {
                 player.MoveLeft();
             }
 
-            if (Raylib.IsKeyDown(KeyboardKey.Space))
+            if (Raylib.IsKeyPressed(KeyboardKey.Space))
             {
                 bullets.Add(player.Shoot());
             }
+
+            /*if (Raylib.IsKeyDown(KeyboardKey.Space) && player.CanShootFullauto())
+            {
+                bullets.Add(player.Shoot());
+            }*/
         }
     }
 }

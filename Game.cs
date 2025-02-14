@@ -16,6 +16,8 @@ namespace SpaceInvaders
             Raylib.InitWindow(Constants.WINDOW_WIDTH, Constants.WINDOW_HEIGHT, "Space Invaders");
             Raylib.SetTargetFPS(144);
 
+            GameManager.Initialize();
+
             while (!Raylib.WindowShouldClose())
             {
                 GameManager.Update();

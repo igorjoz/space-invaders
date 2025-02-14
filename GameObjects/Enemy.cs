@@ -23,13 +23,7 @@ namespace SpaceInvaders.GameObjects
 
         public void Update(float enemyDirection)
         {
-            Move(new Vector2D(Constants.ENEMY_SPEED * direction, 0));
-        }
-
-        public void SwitchDirection()
-        {
-            direction *= - 1.0f;
-            Move(new Vector2D(0, Constants.ENEMY_DROP_DISTANCE));
+            Move(new Vector2D(Constants.ENEMY_SPEED * enemyDirection, 0));
         }
     }
 }
