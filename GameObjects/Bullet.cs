@@ -1,5 +1,5 @@
-﻿using SpaceInvaders.Utils;
-using Raylib_cs;
+﻿using Raylib_cs;
+using SpaceInvaders.Utils;
 
 namespace SpaceInvaders.GameObjects
 {

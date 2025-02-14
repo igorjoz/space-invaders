@@ -1,10 +1,7 @@
 ﻿using Raylib_cs;
 using SpaceInvaders.GameObjects;
-using System;
+using SpaceInvaders.Utils;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SpaceInvaders.Managers
 {
@@ -23,6 +20,10 @@ namespace SpaceInvaders.Managers
             if (Raylib.IsKeyPressed(KeyboardKey.Space))
             {
                 bullets.Add(player.Shoot());
+            }
+            if (Raylib.IsKeyPressed(KeyboardKey.Enter) && (GameManager.GameState.Equals(GameState.Lost) || GameManager.GameState.Equals(GameState.Won)))
+            {
+                GameManager.RestartGame();
             }
         }
     }

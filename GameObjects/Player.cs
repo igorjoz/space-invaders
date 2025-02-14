@@ -1,5 +1,5 @@
-﻿using SpaceInvaders.Utils;
-using Raylib_cs;
+﻿using Raylib_cs;
+using SpaceInvaders.Utils;
 
 namespace SpaceInvaders.GameObjects
 {
@@ -26,6 +26,7 @@ namespace SpaceInvaders.GameObjects
 
         public override void Update()
         {
+            // Keep player within bounds
             var clampedX = Math.Clamp(Position.X, Size.X / 2, 800 - Size.X / 2);
             SetPosition(new Vector2D(clampedX, Position.Y));
         }

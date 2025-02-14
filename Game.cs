@@ -1,7 +1,7 @@
-﻿using SpaceInvaders.Utils;
-
-using Raylib_cs;
+﻿using Raylib_cs;
 using SpaceInvaders.Managers;
+using SpaceInvaders.Utils;
+using System.Collections.Generic;
 
 namespace SpaceInvaders
 {
